@@ -6,9 +6,11 @@ class Username
     String user;
     System.out.print("Enter the user name : ");
     Scanner input=new Scanner(System.in);
-    user=input.nextLine();
+    user=input.next();
     input.close();
     System.out.print("Hello, "+user);
   }
 }
+
+
 
