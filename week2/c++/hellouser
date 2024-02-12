@@ -1,9 +1,22 @@
-#include <iostream>
-#include <string>
-
-int main() {
-	std::string name;
-	std::cout << "Please enter a name:";
-	std::cin >> name;
-	std::cout << "Hello " << name;
+#include<iostream> 
+#include<string.h> 
+using namespace std; 
+int main(){ 
+char Name[100]; 
+cout<<"Enter your name:"; 
+cin>>Name; 
+bool a=false; 
+for(int i=0;i<strlen(Name);i++) { 
+if(!(isalpha(Name[i])) || isdigit(Name[i])) { 
+a=true; 
+break; 
+} 
+} 
+if(a) { 
+cout<<"Error"; 
+} 
+             else{
+                          cout<<"Hello "<<Name<<endl; 
+} 
+return 0;
 }
